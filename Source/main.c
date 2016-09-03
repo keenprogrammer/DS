@@ -18,8 +18,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <BasicType.h>
-#include <ds.h>
-#include <dsp.h>
+#include <DL.h>
+#include <DLP.h>
 
 int main()
 {
