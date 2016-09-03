@@ -8,7 +8,7 @@ INCLUDE_DIRECTORIES(
   ${CMAKE_SOURCE_DIR}/../Header/
 )
 
-add_executable(MyDs.exe main.c ds.c)
+add_executable(MyDs.exe main.c DL.c)
 
 SET(BINS MyDs.exe)
  
