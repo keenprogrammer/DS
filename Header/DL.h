@@ -1,9 +1,9 @@
 /*
  * ================================================================================================
  *
- *       Filename:  ds.h
+ *       Filename:  DL.h
  *
- *    Description:  Contains all the data declaration used in ds.c
+ *    Description:  File Contains Data Struture Singly/Doubly Linked List Declarations
  *
  *        Version:  1.0
  *        Created:  Friday 12 August 2016 12:50:32  IST
@@ -17,6 +17,8 @@
  */
 #ifndef __DS_H__
 #define __DS_H__
+
+#include "BasicType.h"
 
 /*
  *=================================================================================================

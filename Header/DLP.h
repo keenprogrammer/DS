@@ -3,7 +3,7 @@
  *
  *       Filename:  dbp.h
  *
- *    Description:  Prototype function used defined in ds.c
+ *    Description:  File Contains Data Structure Singly/Doubly Linked List prototype
  *
  *        Version:  1.0
  *        Created:  Friday 12 August 2016 01:33:59  IST
@@ -18,7 +18,6 @@
 #ifndef __DSP_H__
 #define __DSP_H__
 
-#include <BasicType.h>
 #include <DL.h>
 /*
  *=================================================================================================
@@ -30,13 +29,13 @@ ResultCode SLListInit(SLList  *);
 ResultCode SLListInsertHead(SLList  *, SLNode  *);
 ResultCode SLListInsertTail(SLList  *, SLNode  *);
 ResultCode SLListInsertNth(SLList  *, SLNode  *,  U64);
-ResultCode SLListInsertOrdered(SLList *, SLNode *, ResultMove (*NodeCompare)(PVoid , PVoid));
+ResultCode SLListInsertOrdered(SLList *, SLNode *, ResultMove (*NodeCompare)(pVoid , pVoid));
 
 /*Deletion*/
 ResultCode SLListDeleteHead(SLList  *, ResultCode (*NodeDelete)(SLNode *));
 ResultCode SLListDeleteTail(SLList  *, ResultCode (*NodeDelete)(SLNode *));
 ResultCode SLListDeleteNode(SLList  *, SLNode *, ResultCode (*NodeDelete)(SLNode *), 
-                                                 ResultCode (*NodeCompare)(PVoid, PVoid));
+                                                 ResultCode (*NodeCompare)(pVoid, pVoid));
 ResultCode SLListDeleteNth(SLList  *, ResultCode (*NodeDelete)(SLNode *),  U64);
 ResultCode SLListDeleteList(SLList  *, ResultCode (*NodeDelete)(SLNode *));
 

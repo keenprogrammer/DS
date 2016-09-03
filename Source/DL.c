@@ -123,7 +123,7 @@ ResultCode SLListInsertNth(SLList *list, SLNode *node, U64 N){
  * Params : SLList *, Pointer to a NodeCompare function(userdefined)
  * Returns : ResultCode, Appropriate error code
  */
-ResultCode SLListInsertOrdered(SLList *list, SLNode *node, ResultMove (*NodeCompare)(PVoid, PVoid)){
+ResultCode SLListInsertOrdered(SLList *list, SLNode *node, ResultMove (*NodeCompare)(pVoid, pVoid)){
   ResultCode res = NoError;
   ResultMove resM = MoveFalse;
   if(list && NodeCompare){
@@ -247,7 +247,7 @@ ResultCode SLListDeleteNth(SLList *list, ResultCode (*DeleteNode)(SLNode *), U64
 ResultCode SLListDeleteNode(
   SLList *list, SLNode *node, 
   ResultCode (*DeleteNode)(SLNode *),
-  ResultCode (*NodeCompare)(PVoid, PVoid)
+  ResultCode (*NodeCompare)(pVoid, pVoid)
   ){
 
   ResultCode res = NoError;

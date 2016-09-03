@@ -1,12 +1,12 @@
 /*
  * =====================================================================================
  *
- *       Filename:  main.c
+ *       Filename:  Main.cpp
  *
- *    Description:  
+ *    Description:  Function to compile cpp files
  *
  *        Version:  1.0
- *        Created:  Sunday 14 August 2016 08:14:43  IST
+ *        Created:  Saturday 03 September 2016 11:03:26  IST
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -15,16 +15,21 @@
  *
  * =====================================================================================
  */
-#include <BasicType.h>
-#include <DL.h>
-#include <DLP.h>
 
-int main()
+#include <DH.hpp>
+
+
+#ifdef   __cplusplus
+extern "C"  {
+#endif
+void Hash_copmipation()
 {
-  printf("\n\n Welcome into My Library ......\n\n");
-  /*Calling Cpp main*/
-  Hash_copmipation();
-  return 0;
+  std::cout<<"C++ Hash Compilation Done"<<std::endl;
+  return;
 }
 
+
+#ifdef  __cplusplus
+}
+#endif
 

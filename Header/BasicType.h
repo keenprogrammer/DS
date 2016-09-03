@@ -18,12 +18,27 @@
 #ifndef __BasicType_H__
 #define __BasicType_H__
 
-typedef void * PVoid;
+#include <stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+
+#define  DMALLOC    malloc
+#define  DFREE      free
+#define  DSTRLEN    strlen
+#define  DSTRCPY    strcpy
+#define  DSTRNCPY   strncpy
+#define  DSTRCMP    strcmp
+
+#define  LOG(str)    
+
+
+typedef void * pVoid;
 
 typedef signed char  S8;
 typedef unsigned char  U8;
-typedef signed char * PS8;
-typedef unsigned char * PU8;
+typedef signed char * pS8;
+typedef unsigned char * pU8;
 
 typedef unsigned short int U16;
 typedef signed short int S16;
@@ -44,7 +59,9 @@ typedef enum Error{
   NullPointerError,
   LLInvalidPosError,
   LLHeadNullError,
-  LLUnderFlowError
+  LLUnderFlowError,
+  DNodeNotPresent
 }ResultCode;
+
 
 #endif /*__BasicType_H__*/
