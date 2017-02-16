@@ -24,6 +24,8 @@ int main()
   printf("\n\n Welcome into My Library ......\n\n");
   /*Calling Cpp main*/
   Hash_copmipation();
+  Tree_Test();
+
   return 0;
 }
 

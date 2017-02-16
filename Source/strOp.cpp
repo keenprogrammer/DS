@@ -107,6 +107,6 @@ int main() {
  cout<<StrEqual(str1, str2)<<endl;
  cout<<FindSubStr(str1,str2)<<endl;
  cout<<FindSubStrN(str1,str2)<<endl;
-return 0;
+ return 0;
 }
 
